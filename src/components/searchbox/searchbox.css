@@ -1,0 +1,18 @@
+.searchbox-image{
+    height: 45px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.searchbox-inputs{
+    height: 45px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.searchbox-inputs .full_row{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.searchbox{
+    margin: 10px;
+}

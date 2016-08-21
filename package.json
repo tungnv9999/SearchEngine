@@ -1,0 +1,27 @@
+{
+  "name": "SearchEngineVT",
+  "version": "1.0.0",
+  "description": "An example application of Search engine",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angularjs",
+    "example",
+    "angularjs",
+    "tutorial",
+    "angularjs"
+  ],
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "~3.8.8",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.2.4",
+    "main-bower-files": "^2.13.1"
+  },
+  "dependencies": {
+    
+  }
+}

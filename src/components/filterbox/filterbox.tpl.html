@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-xs-12 filter-box">
+        <label class="block_label">Tìm kiếm theo nguồn</label>
+        <div class="tag_name">
+            <span data-ng-repeat="filter in $storage.filters" class="single_tag label label-success">
+                <span class="tag_text">{{filter}}</span>
+                <span class="tag_close" ng-click="toggleFilter(filter)">x</span>
+            </span>
+        </div>
+        <div class="full_row">
+            <input type="text" ng-model="sourceTerm" placeholder="Tìm kiếm" class="source_search  col-xs-12" ng-keyup="getFilterList(sourceTerm)"/>
+            <img src="../../assets/images/search.png" class="search_thumb">
+        </div>
+        <div class="filter-data checkbox">
+            <!--<label data-ng-repeat="f in $storage.filters" class="block_label filter-item">-->
+                <!--<input id="{{f.term}}" type="checkbox" class="filter-checkbox btn-danger"-->
+                       <!--ng-click="toggleFilter(f.term)"-->
+                       <!--value="{{f.term}}"-->
+                       <!--ng-checked ="checked"-->
+                <!--&gt;-->
+                <!--{{f}}  <span>({{f.count}})</span>-->
+            <!--</label>-->
+
+            <label data-ng-repeat="source in sources" ng-if="$storage.filters.indexOf(source.term) < 0" class="block_label filter-item">
+                <input name="filters[]" id="{{source.term}}" type="checkbox" class="filter-checkbox btn-danger"
+                ng-click="toggleFilter(source.term)"
+                value="{{source.term}}"
+                ng-checked ="$storage.filters.indexOf(source.term) > -1"
+                >
+                {{source.term}}  <span>({{source.count}})</span>
+            </label>
+        </div>
+    </div>
+
+    <!--<div class="col-xs-12 filter-box">-->
+        <!--<label class="block_label">Search by type</label>-->
+        <!--<div class="tag_name">-->
+        <!--</div>-->
+        <!--<div class="full_row">-->
+            <!--<input type="text" placeholder="search" class="topic_search col-xs-12"/>-->
+            <!--<img src="../../assets/images/search.png" class="search_thumb">-->
+        <!--</div>-->
+    <!--</div>-->
+
+</div>

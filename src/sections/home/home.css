@@ -1,0 +1,83 @@
+
+table td{
+    text-overflow: ellipsis;
+    max-height: 20px !important;
+}
+table tr{
+
+
+}
+
+th.recipe-name{
+    width: 150px !important;
+}
+
+.highlight{
+    background: yellow;
+}
+
+.search-results-info{
+    background: whitesmoke;
+}
+
+.records {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.records li {
+    position: relative;
+    background-color: #FFF;
+    padding: 20px 150px 20px 20px;
+    margin-bottom: 20px;
+}
+.records li.offline {
+    background-color: #999999;
+    color: #666666;
+}
+.records li .btn {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+.records li p {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: #666;
+}
+.records li .number {
+    width: 80px;
+    height: 80px;
+    float: left;
+    background-color: #333;
+    margin: 0 20px 0 0;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    color: #CCC;
+}
+.records li.offline .number {
+    background-color: #919191;
+    color: #666;
+}
+.share-buttons {
+    float: right;
+    width: 330px;
+    height: 50px;
+    margin-top: -10px;
+}
+.home-buttons {
+    text-align: center;
+    padding: 20px 0 40px 0;
+}
+.no-data.tuts {
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+@media(max-width:992px) {
+    .home-banner .inner {
+        width: 100%;
+        padding: 20px;
+    }
+}
